@@ -1,0 +1,312 @@
+
+/* estilo geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+#interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.GB-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 2s;
+}   
+
+/* estilo Cabeçalho */
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+}
+header a:houver{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+.GB-contato button:houver{
+    box-shadow: rgba(0, 0, 255, 0.301);
+    transform: scale(1.05);
+}
+
+/* estilo Topo do Site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 40px;
+}
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-align: justify;
+
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: blue;
+}
+.topo-do-site .txt-topo-site{
+    color: #7d7d7d;
+    margin: 40px 0;
+}
+/*.topo-do-site {
+  width: 400px; /* Ajuste a largura conforme necessário */
+ /* margin: 0 auto;
+}
+
+/* estilo Sobre Mim */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+
+}
+.sobre .txt-sobre h2{
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: blue;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* estilo Formação */
+
+section.formacao{
+    padding: 40px 4%;
+}
+
+section.formacao .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.formacao .txt-formacao{
+    color: #fff;
+
+}
+.formacao .txt-formacao h2{
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.formacao .txt-sobre h2 span{
+    color: blue;
+    display: block;
+}
+.formacao .txt-formacao p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* estilo Portfólio */
+section.portfolio{
+    padding: 40px 4%;
+}
+
+section.portfolio .flex{
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.portfolio .txt-portfolio{
+    color: #fff;
+
+}
+.portfolio .txt-portfolio h2{
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.portfolio .txt-portfolio h2 span{
+    color: blue;
+    display: block;
+}
+.portfolio .txt-portfolio p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.portfolio .txt-portfolio ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.ing-portfolio{
+    width: 300px;
+    height: 460px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.295);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #000000;
+}
+
+/* estilo Contato */
+section.formulario{
+    padding: 80px 4%;
+}
+
+form{
+    margin-top: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;    
+}
+
+form textare{
+    resize: none;
+    max-height: 200px;
+}
+
+form .contato-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .contato-enviar imput{
+    width: 120px;
+    background-color: blue;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+section.formulario {
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.formulario .txt-contato{
+    color: #fff;
+
+}
+.formulario .txt-contato h3{
+    font-size: 42px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+.formulario .txt-contato h3 span{
+    color: blue;
+    
+}
+.formulario .txt-contato p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.formulario .txt-contato ul{
+    list-style-type: none;
+    padding: 0;
+}
+.txt-contato{
+    text-align: center;    
+}
+
+/* estilo Rodapé */
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 40PX 10px #ffffff09;        
+}
+footer .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .GB-footer{
+    color: #fffcfc;
+    font-size: 14px;
+}
